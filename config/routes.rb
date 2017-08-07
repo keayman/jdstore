@@ -16,7 +16,12 @@ end
       delete :clean
        post :checkout
     end
-  end
+end
+
+namespace :account do
+  resources :orders
+ end
+
   resources :cart_items
   resources :orders
 end
